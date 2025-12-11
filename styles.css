@@ -1,0 +1,1803 @@
+
+body{
+  background-image: url(IMG/bac3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+
+.cabeza{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(IMG/teclado.azul.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 130%;
+  background-position: right;
+  position: relative;
+  overflow:hidden;
+
+}
+
+.cabeza::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 68%, #000 100%);
+}
+
+.tit-cab{
+color: White;
+font-family: "Science Gothic";
+font-size: 3em;
+text-shadow: #ffffff 0 0 10px;
+}
+
+.tit-cab:hover{
+  font-size: 4em;
+  transition: all 0.2s ease;
+}
+.contacto-blanco{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 8px;
+  width: fit-content;
+  height: 0px;
+}
+
+.contacto-blanco:hover{
+  background-color: rgb(3, 3, 3);
+}
+.contacto{  
+  text-shadow:rgb(5, 117, 161) 0 0 10px;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  font-family: "Science Gothic";
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  box-shadow: rgb(5, 117, 161) 0 0 20px;
+  display: inline-block;
+  border-radius: 7px;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to left, transparent 30%, #000000 100%);
+}
+.contacto a{
+  text-decoration: none;
+  color: white;
+}
+.contacto:hover {
+  background-color: rgb(71, 69, 69);
+  color: white;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to right, transparent 30%, #000000 100%);
+    
+}
+
+.sub-header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #181818;
+}
+
+.lista {
+    font-family: "Science Gothic";
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista > li {
+  position: relative;     
+  display: inline-block;   
+}
+
+.lista a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 120px;
+  background: #181818;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.lista a:hover {
+  background: #242424;
+}
+
+.desplegable-1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #181818;
+  display: none;
+  width: 100%;
+}
+.desplegable-2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #181818;
+  display: none;
+  width: 100%;
+}
+.desplegable-3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #181818;
+  display: none;
+  width: 100%;
+}
+.desplegable-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #181818;
+  display: none;
+  width: 100%
+}
+
+.desplegable-1 li a {
+  padding: 8px 75px;
+  text-align: left;
+}
+.desplegable-2 li a {
+  padding: 8px 75px;
+  text-align: left;
+}
+.desplegable-3 li a {
+  padding: 8px 75px;
+  text-align: left;
+}
+.desplegable-4 li a {
+  padding: 8px 75px;
+  text-align: left;
+}
+
+.desplegable:hover .desplegable-1 {
+  display: block;
+}
+.desplegable:hover .desplegable-2 {
+  display: block;
+}
+.desplegable:hover .desplegable-3 {
+  display: block;
+}
+.desplegable:hover .desplegable-4 {
+  display: block;
+}
+
+.boton-contacto{
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.personaliza{
+  text-align: center;
+  font-family: "Science Gothic";
+  font-size: 2em;
+  padding-top: 30px;
+  color: white;
+}
+
+.texto-opticos{
+  margin-top: 40px;
+  color: white;
+  width: fit-content;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.texto-switches-opticos{
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Science Gothic";
+}
+.switches-texto{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Science Gothic";
+}
+.foto-switch1{
+  box-shadow: rgb(161, 5, 127) 0px 0px 20px;
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+ border-radius: 8px;
+ 
+}
+.foto-switch, .texto-switches-opticos{
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-lineales{
+  margin-top: 40px;
+  color: white;
+  width: fit-content;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.texto-switches-lineales{
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Science Gothic";
+}
+.foto-switch2{
+  box-shadow: rgb(65, 65, 65) 0px 0px 20px;
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+    
+}
+.foto-switch2, .texto-switches-lineales{
+  align-items: center;
+  justify-content: center;
+  
+}
+.texto-clicky{
+  margin-top: 40px;
+  color: white;
+  width: fit-content;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.texto-switches-clicky{
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Science Gothic";
+}
+.foto-switch3{
+  box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+    
+}
+.foto-switch3, .texto-switches-clicky{
+  align-items: center;
+  justify-content: center;
+}
+.todos-los-switches{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.card{
+  box-shadow: #000000 0px 0px 10px;
+  display: inline-block;
+  margin: 75px;
+  color: white !important;
+  border: 1px solid black !important;
+  background-color: black var(--bs-card-bg) !important;
+  background-color: #000000 !important;
+  --bs-card-border-color: rgb(0, 0, 0) !important;
+  width: 400px !important;
+  height: auto !important;
+}
+.card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 4px;
+background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+z-index: 2;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+  0 0 30px rgba(13, 110, 253, 0.6);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+.card:hover{
+  border: 1px solid rgb(5, 117, 161) !important;   
+}
+
+.card-img-top3{
+  border-radius: 6px;
+}
+
+.card-body{
+  color: white;
+  background-color: #181818;
+  width: 100% !important;
+  height: auto !important;
+}
+.card-text{
+  color: gray;
+}
+
+.presets-general{
+  text-align: center; 
+  color: white;
+  font-family: "Science Gothic";
+  margin-right: 250px;
+  margin-left: 250px;
+  background-color: #20202096;
+  border-radius: 5px;
+  box-shadow: #000000 0px 0px 10px;
+}
+.texto-presets{
+  font-family:"Science Gothic";
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.todos-los-presets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.carcasa{
+  color: white;
+  font-family: "Science Gothic";
+  text-align: center;
+  margin-top: 60px;
+}
+.texto-carcasa{
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 2em;
+}
+
+.todas-las-carcasas{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.foto-carcasa-aluminio{
+  width: auto;
+  height: 400px;
+  border-radius: 8px;
+  margin-right:100px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.foto-carcasa-plastico{
+  width: auto;
+  height: 400px;
+  border-radius: 8px;
+  margin-right:100px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.foto-carcasa-fibradecarbono{
+  width: auto;
+  height: 400px;
+  border-radius: 8px;
+  margin-right:100px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.texto-carcasa-aluminio{
+  font-size: 1.3em;
+}
+.texto-carcasa-plastico{
+  font-size: 1.3em;
+}
+.texto-carcasa-fibradecarbono{
+  font-size: 1.3em;
+}
+
+.diseño{
+  color: white;
+  font-family: "Science Gothic";
+  margin-bottom: 50px;
+}
+.texto-diseño{
+  font-family:"Science Gothic";
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 2em;
+}
+
+
+.texto-tamaño{
+  font-size: 2em;
+  margin-top: 50px;
+  padding: 30px;
+}
+.tamaño{
+  box-shadow: #000000 0px 0px 10px;
+  color: white;
+  font-family:"Science Gothic";
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #18181831;
+}
+.texto-formato{
+  padding: 10px;
+  text-align: left;
+  font-size: 1.2em;
+  max-height: 578px;
+  height: 578px;
+  padding-right: 30px;
+  text-shadow: rgb(15, 92, 207) 0 0 10px;
+}
+
+.texto-foto-tamaño{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.foto-formatodeteclado{
+  width: 500px;
+  height: auto;
+  display: flex;
+}
+.formato60{
+  margin-top: 85px;
+  text-align: center;
+
+}
+.formatoTKL{
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+.formatoCompleto{
+  padding: 20px;
+  text-align: center;
+  margin-top: 120px;
+}
+.diferentes-tamaños{
+  box-shadow: #000000 0px 0px 10px;
+  border: 1px solid black;
+  
+}
+
+.diseño-general{
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+  padding-bottom: 50px;
+  background-color: #18181831;
+}
+
+.diseño {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-diseño{
+  display: flex;
+  width: 600px;
+  background: #14141b;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); 
+}
+
+.card-diseño-imagen {
+    position: relative;
+    height: 50%;
+}
+
+.card-diseño-imagen img {
+  width: 314px;
+  display: block;
+  height: 314px;
+  object-fit: cover;
+}
+
+
+.card-diseño-contenido {
+  padding: 20px;
+}
+
+.card-diseño-contenido h2 {
+ font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-diseño-contenido p {
+  font-size: 14px;
+  color: #b5b5c7;
+  margin-bottom: 15px;
+}
+
+.boton-diseño-estandar {
+  display: inline-block;
+  font-size: 14px;
+  color: #6aa7ff;
+  margin-bottom: 20px;
+  text-decoration: none;
+  margin-top: 126px;
+}
+
+.boton-diseño-estandar:hover {
+  text-decoration: underline;
+}
+
+.details {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.details:hover {
+    opacity: 1;
+}
+
+.card-diseño2{
+  display: flex;
+  width: 600px;
+  background: #14141b;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); 
+}
+
+.card-diseño-imagen2 {
+  position: relative;
+  height: 50%;
+}
+
+.card-diseño-imagen2 img {
+  width: 300px;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.card-diseño-contenido2 {
+  padding: 20px;
+}
+
+.card-diseño-contenido2 h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-diseño-contenido2 p {
+  font-size: 14px;
+  color: #b5b5c7;
+  margin-bottom: 15px;
+}
+
+.boton-diseño-wasd {
+  display: inline-block;
+  font-size: 14px;
+  color: #6aa7ff;
+  margin-bottom: 20px;
+  text-decoration: none;
+  margin-top: 60px;
+}
+
+.boton-diseño-wasd:hover {
+ text-decoration: underline;
+}
+
+.details2 {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.details2:hover {
+  opacity: 1;
+}
+
+.card-diseño::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.card-diseño:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+  0 0 30px rgba(13, 110, 253, 0.6);
+  border: 1px solid rgb(5, 117, 161) !important; 
+}
+
+.card-diseño:hover::before {
+  transform: scaleX(1);
+}
+
+.card-diseño2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.card-diseño2:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+  0 0 30px rgba(13, 110, 253, 0.6);
+  border: 1px solid rgb(5, 117, 161) !important; 
+}
+
+.card-diseño2:hover::before {
+  transform: scaleX(1);
+}
+
+
+:root {
+  --primary-color: #0566a1;
+  --secondary-color: #ff6b6b;
+  --accent-color: #2563eb;
+  --dark-bg: #181818;
+  --darker-bg: #14141b;
+  --text-color: #ffffff;
+  --secondary-text: #b5b5c7;
+  --card-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(5, 117, 161, 0.6);
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.tit-cab {
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 2.5em;
+  text-shadow: #ffffff 0 0 10px;
+  transition: font-size var(--transition-medium);
+  z-index: 1;
+}
+
+.tit-cab:hover {
+  font-size: 2.8em;
+}
+
+.sub-header {
+  background-color: var(--dark-bg);
+  width: 100%;
+}
+
+.lista {
+  font-family: "Science Gothic", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lista > li {
+  position: relative;
+}
+
+.lista a {
+  display: block;
+  padding: 15px 20px;
+  background: var(--dark-bg);
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+}
+
+.lista a:hover {
+  background: #242424;
+}
+
+.desplegable-1,
+.desplegable-2,
+.desplegable-3,
+.desplegable-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--dark-bg);
+  display: none;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.desplegable-1 li a,
+.desplegable-2 li a,
+.desplegable-3 li a,
+.desplegable-4 li a {
+  padding: 12px 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.desplegable:hover .desplegable-1,
+.desplegable:hover .desplegable-2,
+.desplegable:hover .desplegable-3,
+.desplegable:hover .desplegable-4 {
+  display: block;
+}
+
+.boton-contacto {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-blanco {
+  background-color: #000000;
+  border-radius: 8px;
+  transition: background-color var(--transition-fast);
+}
+
+.contacto-blanco:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.contacto {
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: 1px solid white;
+  box-shadow: rgb(5, 117, 161) 0 0 20px;
+  border-radius: 7px;
+  background: linear-gradient(to left, transparent 30%, #000000 100%);
+  text-decoration: none;
+  display: inline-block;
+  transition: all var(--transition-medium);
+}
+
+.contacto:hover {
+  background: linear-gradient(to right, transparent 30%, #000000 100%);
+  transform: scale(1.05);
+}
+
+.personaliza {
+  text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 1.8em;
+  padding: 40px 20px 20px;
+  color: white;
+}
+
+.presets-general {
+  text-align: center;
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+  margin: 0 20px;
+  background-color: rgba(32, 32, 32, 0.9);
+  border-radius: 10px;
+  box-shadow: #000000 0px 0px 10px;
+  padding: 20px;
+}
+
+.texto-presets {
+  font-family: "Science Gothic", sans-serif;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.todos-los-presets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.card {
+  box-shadow: #000000 0px 0px 10px;
+  color: white !important;
+  border: 1px solid black !important;
+  background-color: #000000 !important;
+  --bs-card-border-color: rgb(0, 0, 0) !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--hover-shadow);
+  border: 1px solid var(--primary-color) !important;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  color: white;
+  background-color: var(--dark-bg);
+  padding: 20px !important;
+}
+
+.carcasa {
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.texto-carcasa {
+  font-size: 1.8em;
+  padding: 30px 0;
+}
+
+.todas-las-carcasas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.tamaño {
+  box-shadow: #000000 0px 0px 10px;
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(24, 24, 24, 0.2);
+  margin: 40px 20px;
+  border-radius: 10px;
+}
+
+.texto-tamaño {
+  font-size: 1.8em;
+  padding: 20px 0 40px;
+}
+
+.texto-foto-tamaño {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.texto-formato {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  text-shadow: rgb(15, 92, 207) 0 0 10px;
+  order: 2;
+}
+
+.foto-formatodeteclado {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: #000000 0px 0px 10px;
+  border-radius: 8px;
+  order: 1;
+}
+
+.formato60,
+.formatoTKL,
+.formatoCompleto {
+  margin: 15px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.switches {
+  padding: 0 20px;
+}
+
+.switches-texto {
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "Science Gothic", sans-serif;
+  padding: 40px 0;
+}
+
+.todos-los-switches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.texto-opticos,
+.texto-lineales,
+.texto-clicky {
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.texto-switches-opticos,
+.texto-switches-lineales,
+.texto-switches-clicky {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-family: "Science Gothic", sans-serif;
+}
+
+.foto-switch1,
+.foto-switch2,
+.foto-switch3 {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.diseño-general {
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+  padding: 40px 20px;
+  background-color: rgba(24, 24, 24, 0.2);
+  margin: 40px 20px;
+  border-radius: 10px;
+}
+
+.texto-diseño {
+  font-family: "Science Gothic", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  padding-bottom: 40px;
+}
+
+.diseño {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.card-diseño,
+.card-diseño2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background: var(--darker-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  position: relative;
+}
+
+.card-diseño-imagen,
+.card-diseño-imagen2 {
+  width: 100%;
+}
+
+.card-diseño-imagen img,
+.card-diseño-imagen2 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-diseño-contenido,
+.card-diseño-contenido2 {
+  padding: 25px;
+}
+
+.card-diseño-titulo,
+.card-diseño-titulo2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.card-diseño-texto,
+.card-diseño-texto2 {
+  font-size: 1em;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.boton-diseño-estandar,
+.boton-diseño-wasd {
+  display: inline-block;
+  font-size: 1em;
+  color: #6aa7ff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.boton-diseño-estandar:hover,
+.boton-diseño-wasd:hover {
+  text-decoration: underline;
+}
+
+.details,
+.details2 {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 1.2em;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.details:hover,
+.details2:hover {
+  opacity: 1;
+}
+
+.card-diseño:hover,
+.card-diseño2:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--hover-shadow);
+}
+
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) {
+  .cabeza {
+    height: 180px;
+  }
+  
+  .tit-cab {
+    font-size: 3em;
+  }
+  
+  .tit-cab:hover {
+    font-size: 3.3em;
+  }
+  
+  .personaliza {
+    font-size: 2em;
+  }
+  
+  .texto-presets,
+  .texto-carcasa,
+  .texto-tamaño,
+  .switches-texto,
+  .texto-diseño {
+    font-size: 2em;
+  }
+  
+  .lista a {
+    padding: 15px 30px;
+  }
+  
+  .todos-los-presets,
+  .todas-las-carcasas {
+    gap: 30px;
+  }
+  
+  .card {
+    max-width: 300px !important;
+  }
+  
+  .texto-foto-tamaño {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .texto-formato {
+    order: 1;
+    text-align: left;
+    max-width: 300px;
+  }
+  
+  .foto-formatodeteclado {
+    order: 2;
+    max-width: 400px;
+  }
+  
+  .todos-los-switches {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .texto-opticos,
+  .texto-lineales,
+  .texto-clicky {
+    max-width: 300px;
+  }
+  
+  .diseño {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-diseño,
+  .card-diseño2 {
+    max-width: 400px;
+  }
+  
+  .card-diseño-imagen img,
+  .card-diseño-imagen2 img {
+    height: 200px;
+  }
+}
+
+/* Desktop (1024px en adelante) */
+@media (min-width: 1024px) {
+  .cabeza {
+    height: 200px;
+  }
+  
+  .tit-cab {
+    font-size: 3.5em;
+  }
+  
+  .tit-cab:hover {
+    font-size: 4em;
+  }
+  
+  .presets-general,
+  .tamaño,
+  .diseño-general {
+    margin: 40px 100px;
+  }
+  
+  .lista a {
+    padding: 15px 60px;
+  }
+  
+  .todos-los-presets,
+  .todas-las-carcasas {
+    gap: 40px;
+  }
+  
+  .card {
+    max-width: 350px !important;
+  }
+  
+  .texto-foto-tamaño {
+    gap: 100px;
+  }
+  
+  .texto-formato {
+    max-width: 350px;
+    font-size: 1.2em;
+  }
+  
+  .foto-formatodeteclado {
+    max-width: 500px;
+  }
+  
+  .todos-los-switches {
+    gap: 50px;
+  }
+  
+  .texto-opticos,
+  .texto-lineales,
+  .texto-clicky {
+    max-width: 320px;
+  }
+  
+  .foto-switch1,
+  .foto-switch2,
+  .foto-switch3 {
+    max-width: 320px;
+  }
+  
+  .diseño {
+    gap: 50px;
+  }
+  
+  .card-diseño,
+  .card-diseño2 {
+    max-width: 600px;
+    flex-direction: row;
+  }
+  
+  .card-diseño-imagen,
+  .card-diseño-imagen2 {
+    width: 50%;
+  }
+  
+  .card-diseño-imagen img,
+  .card-diseño-imagen2 img {
+    height: 350px;
+  }
+  
+  .card-diseño-contenido,
+  .card-diseño-contenido2 {
+    width: 50%;
+  }
+  
+  .boton-diseño-estandar {
+    margin-top: 126px;
+  }
+  
+  .boton-diseño-wasd {
+    margin-top: 60px;
+  }
+}
+
+/* Pantallas muy grandes (1440px en adelante) */
+@media (min-width: 1440px) {
+  .presets-general,
+  .tamaño,
+  .diseño-general {
+    margin: 40px 200px;
+  }
+  
+  .carcasa,
+  .switches {
+    padding: 0 200px;
+  }
+  
+  .lista a {
+    padding: 15px 80px;
+  }
+  
+  .todos-los-presets,
+  .todas-las-carcasas {
+    gap: 60px;
+  }
+  
+  .card {
+    max-width: 400px !important;
+  }
+  
+  .texto-foto-tamaño {
+    gap: 150px;
+  }
+  
+  .texto-formato {
+    max-width: 400px;
+    font-size: 1.3em;
+  }
+  
+  .foto-formatodeteclado {
+    max-width: 600px;
+  }
+}
+
+/* Pantallas pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .tit-cab {
+    font-size: 2em;
+  }
+  
+  .tit-cab:hover {
+    font-size: 2.2em;
+  }
+  
+  .personaliza {
+    font-size: 1.5em;
+  }
+  
+  .texto-presets,
+  .texto-carcasa,
+  .texto-tamaño,
+  .switches-texto,
+  .texto-diseño {
+    font-size: 1.5em;
+  }
+  
+  .lista {
+    flex-direction: column;
+  }
+  
+  .lista > li {
+    width: 100%;
+  }
+  
+  .lista a {
+    padding: 15px;
+  }
+  
+  .desplegable-1,
+  .desplegable-2,
+  .desplegable-3,
+  .desplegable-4 {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+  
+  .desplegable:hover .desplegable-1,
+  .desplegable:hover .desplegable-2,
+  .desplegable:hover .desplegable-3,
+  .desplegable:hover .desplegable-4 {
+    display: block;
+  }
+  
+  .contacto {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+  
+  .card {
+    margin: 10px !important;
+  }
+  
+  .card-img-top {
+    height: 180px;
+  }
+  
+  .card-diseño-contenido,
+  .card-diseño-contenido2 {
+    padding: 20px;
+  }
+  
+  .boton-diseño-estandar,
+  .boton-diseño-wasd {
+    margin-top: 10px;
+  }
+}
+
+/* Ajustes para el fondo en móviles */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-position: center;
+  }
+  
+  .cabeza {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .card:hover,
+  .card-diseño:hover,
+  .card-diseño2:hover {
+    transform: none;
+  }
+}
+/* footer.css - Estilos mejorados para el footer de KeyTech */
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Variables CSS */
+:root {
+    --primary-color: #2a2d43;
+    --secondary-color: #2563eb;
+    --accent-color: #4ecdc4;
+    --text-color: #f8f9fa;
+    --text-light: #adb5bd;
+    --bg-dark: #1a1c2e;
+    --bg-darker: #121420;
+    --border-color: #343a40;
+    --transition: all 0.3s ease;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: var(--bg-darker);
+    color: var(--text-color);
+    padding: 60px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid var(--secondary-color);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--secondary-color));
+    z-index: 1;
+}
+
+/* Secciones del footer */
+.footer-section {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.footer-section::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--border-color), transparent);
+}
+
+.footer-section:last-child::after {
+    display: none;
+}
+
+/* Títulos del footer */
+.footer-title {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* Información de la marca */
+.brand-info {
+    max-width: 300px;
+}
+
+.footer-description {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Iconos sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+    color: white;
+}
+
+/* Lista de enlaces */
+.lista-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-footer li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 0;
+    transition: var(--transition);
+}
+
+.lista-footer li:hover {
+    padding-left: 10px;
+}
+
+.lista-footer li a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.lista-footer li a i {
+    margin-right: 10px;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    width: 20px;
+    text-align: center;
+}
+
+.lista-footer li a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+}
+
+.lista-footer li:hover::before {
+    content: '▸';
+    position: absolute;
+    left: -5px;
+    color: var(--secondary-color);
+}
+
+/* Información de contacto */
+.contact-info p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.contact-info i {
+    margin-right: 12px;
+    color: var(--accent-color);
+    font-size: 1rem;
+    width: 20px;
+}
+
+
+
+/* Sección inferior del footer */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.copyright {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Animación de teclados */
+.keyboard-animation {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.key {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    animation: float 3s ease-in-out infinite;
+}
+
+.key-1 {
+    animation-delay: 0s;
+}
+
+.key-2 {
+    animation-delay: 1s;
+}
+
+.key-3 {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .footer-section::after {
+        display: none;
+    }
+    
+    .footer-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .lista-footer li a {
+        justify-content: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .contact-info p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .keyboard-animation {
+        display: none;
+    }
+}
+
+/* Efecto de iluminación en hover para toda la sección */
+.footer-section:hover .footer-title {
+    color: var(--secondary-color);
+}
